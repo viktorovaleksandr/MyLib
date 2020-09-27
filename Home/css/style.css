@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+body {	
+	min-width: 1440px;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+.wrapper {
+	min-width: 1024px;
+	min-height: 100vh;
+}
+.header {
+	background: #fff;
+	box-shadow: 0 4px 4px 0 rgba(79, 88, 178, 0.25);
+	padding: 24px 0;
+}
+.navbar {
+	display: flex;
+}
+.navbar .logo {
+	font: 600 24px/32px Helvetica, sans-serif;
+	color: rgba(106,117,202, .7);
+	text-transform: uppercase;
+	flex: 0 0 75px;
+	margin: 0 165px 0 48px;
+}
+.navbar .logo:hover {
+	opacity: .7;
+}
+.navbar-list {
+	display: flex;
+}
+.navbar-list li {
+	margin-right: 48px;
+}
+.navbar-list li a {
+	font: 600 16px/32px Helvetica, sans-serif;
+	color: #131320;
+	text-transform: capitalize;
+	border-bottom: 1px solid transparent;
+}
+.navbar-list li a:hover {
+	color: rgba(106,117,202, .7);
+}
+.title-tricks {
+	font: 600 54px/1.17 Helvetica, sans-serif;
+	color: #131320;
+	text-align: center;
+  	margin: 100px 0;
+}
+.main-content {
+	font: 16px/ 21px 'Courier Prime', monospace;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	overflow: hidden;
+}
+.box {
+	height: 240px;
+	background:linear-gradient(-135deg, transparent 35px, #E6E6E6 0) top right;
+  	background-size: 100%;
+  	background-repeat: no-repeat;
+	box-shadow: -10px 10px 10px rgba(79, 88, 178, 0.25);
+	border-radius: 15px;
+	margin: 0 38px 48px 0;
+	overflow: auto;
+}
+.box:nth-child(1),
+.box:nth-child(4) {
+	background:linear-gradient(-135deg, transparent 35px, #AAA8FA 0) top right;
+  	background-size: 100%;
+  	background-repeat: no-repeat;
+}
+.box-item_3,
+.box-item_2,
+.box-item_1 {
+  	flex: 0 0 240px;
+} 
+.box-item_4,
+.box-item_5 {
+  	flex: 0 0 796px;
+}
+.box dl {
+	padding: 32px;
+}
+.box-item_1 dt {
+	padding: 0 0 17px 0;
+}
+.box-item_2 dt:nth-child(2) {
+	padding: 0 0 0 20px;
+}
+.box-item_2 dt:nth-child(3) {
+	padding: 0 0 0 40px;
+}
+.box-item_2 dt:nth-child(4) {
+	padding: 0 0 0 20px;
+}
+.box-item_2 dt:nth-child(5) {
+	padding: 0 0 0 40px;
+}
+.box-item_2 dt:nth-child(6) {
+	padding: 0 0 0 20px;
+}
+.box-item_3 dt {
+	padding: 0 0 15px 0;
+}
+.box-item_4 dt:nth-child(1) {
+	padding: 0 0 20px 0;
+}
+.box-item_5 dt:nth-child(even) {
+	padding: 0 0 15px 0;
+}
