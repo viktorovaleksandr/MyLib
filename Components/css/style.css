@@ -75,7 +75,7 @@ body {
 	left: 0;
 	top: 10px;
 }
-.main-content {
+.content {
 	flex-grow: 1;
 	padding: 0 0 24px;
 	overflow: hidden;
@@ -86,14 +86,14 @@ body {
 	border-bottom: 1px solid #131320;
 	padding: 24px 48px;
 }
-.container {	
+.block {	
 	font: 16px/ 21px 'Courier Prime', monospace;
 	display: flex;
 	flex-flow: row wrap;
 	padding: 0 48px;
 	margin: 30px 0;
 }
-.box-info {
+.bl-info {
 	width: 100%;
 	height: 127px;
 	font: 16px/21px Helvetica, sans-serif;
@@ -103,22 +103,14 @@ body {
 	background-color: #AAA8FA;
   	overflow: auto;	
 }
-.box-info:before {
-    content: '';
-    position: absolute;
-    top: 0; right: 0;
-    border-top: 55px solid #fff;
-    border-left: 55px solid #AAA8FA;
-    width: 0;
-}
-.box-info dl {
+.bl-info dl {
 	display: flex;
 	flex-flow: column;
 	justify-content: space-between; 
 	flex: 0 0 63px;
 	padding: 32px 88px;
 }
-.box-info dl::before {
+.bl-info dl::before {
 	content:'';
 	background: url('../img/info.svg');
 	height: 24px;
@@ -184,7 +176,7 @@ body {
 .nav-item:hover:before {
 	opacity: 0.7
 }
-.box-border {
+.bl-border {
 	width: 100%;
 	padding: 16px;
 	border-radius: 15px;
@@ -192,7 +184,7 @@ body {
   	background-color: #fff;
   	position: relative;
 }
-.box-border span {
+.bl-border span {
 	width: 33px;
   	height: 21px;
 	font: 600 12px/21px Helvetica, sans-serif;
@@ -206,9 +198,8 @@ body {
 	top: -10px;
 	z-index: 1;
 }
-.box-html {
+.bl-html {
 	color: #7d868e;
-	
 	height: 223px;
 	position: relative;
 	box-shadow: -10px 10px 10px rgba(79, 88, 178, 0.25);
@@ -218,13 +209,13 @@ body {
   	background-repeat: no-repeat;
   	overflow: auto;
 }
-.box-html dl {
+.bl-html-list {
 	padding: 48px;	
 }
-.box-html .box-html-item {
-	padding: 0 0 0 40px;	
+.bl-html-list dt:nth-child(n+2):nth-child(-n+5) {
+	padding-left: 40px;
 }
-.box-css {
+.bl-css {
 	color: #7d868e;
 	position: relative;
 	box-shadow: -10px 10px 10px rgba(79, 88, 178, 0.25);

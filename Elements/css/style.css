@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
 body {	
 	min-width: 1440px;
@@ -75,7 +75,7 @@ body {
 	left: 0;
 	top: 10px;
 }
-.main-content {
+.content {
 	flex-grow: 1;
 	padding: 0 0 24px;
 	overflow: hidden;
@@ -87,14 +87,14 @@ body {
 	padding: 24px 48px;
 	margin: 0 0 24px 0;	
 }
-.container {
+.block {
 	font: 16px/ 21px 'Courier Prime', monospace;
 	display: flex;
 	flex-flow: row wrap;
 	padding: 0 48px;
 	margin: 30px 0;
 }
-.box-info {
+.bl-info {
 	width: 100%;
 	height: 127px;
 	font: 16px/21px Helvetica, sans-serif;
@@ -104,22 +104,14 @@ body {
 	background-color: #AAA8FA;
   	overflow: auto;	
 }
-.box-info:before {
-    content: '';
-    position: absolute;
-    top: 0; right: 0;
-    border-top: 55px solid #fff;
-    border-left: 55px solid #AAA8FA;
-    width: 0;
-}
-.box-info dl {
+.bl-info-list {
 	display: flex;
 	flex-flow: column;
 	justify-content: space-between; 
 	flex: 0 0 63px;
 	padding: 30px 88px;
 }
-.box-info dl::before {
+.bl-info-list::before {
 	content:'';
 	background: url('../img/info.svg');
 	height: 24px;
@@ -130,7 +122,7 @@ body {
 	cursor: pointer;
 }
 .title-headline {
-  font: bold 24px/32px Helvetica, sans-serif;
+  font: 600 24px/32px Helvetica, sans-serif;
   color: #131320;
   text-transform: uppercase;
   border-bottom: 1px solid #131320;
@@ -138,33 +130,33 @@ body {
   margin: 0 auto;
   padding: 0 0 15px 0;
 }
-.headings {
+.headings-list {
 	color: #131320;
 	font-family: Helvetica, sans-serif;
 	font-weight: bold;
 	text-transform: capitalize;
 }
-.headings li:nth-child(1) {
+.headings-list .h1 {
   	font-size: 54px;
   	line-height: 63px;
  	margin: 40px auto;
 }
-.headings li:nth-child(2) {
+.headings-list .h2 {
   font-size: 36px;
   line-height: 42px;
   margin: 40px 0 21px 0;  
 }
-.headings li:nth-child(3) {
+.headings-list .h3 {
   font-size: 24px;
   line-height: 42px;
   margin: 21px auto;
 }
-.headings li:nth-child(n+4) {
+.headings-list li:nth-child(n+4) {
 	font-size: 16px;
   	line-height: 21px;
 	margin: 21px 0 0 0;
 }
-.box-border {
+.bl-border {
 	width: 100%;
 	padding: 16px;
 	border-radius: 15px;
@@ -172,7 +164,7 @@ body {
   	background-color: #fff;
   	position: relative;
 }
-.box-border span {
+.bl-border span {
 	font: 600 12px/21px Helvetica, sans-serif;
 	width: 33px;
   	height: 21px;
@@ -186,7 +178,7 @@ body {
 	top: -10px;
 	z-index: 1;
 }
-.box-html {
+.bl-html {
 	color: #7d868e;
 	height: 223px;
 	position: relative;
@@ -197,10 +189,10 @@ body {
   	background-repeat: no-repeat;
   	overflow: auto;
 }
-.box-html dl {
+.bl-html-list {
 	padding: 48px;
 }
-.box-css {
+.bl-css {
 	color: #7d868e;
 	position: relative;
 	box-shadow: -10px 10px 10px rgba(79, 88, 178, 0.25);

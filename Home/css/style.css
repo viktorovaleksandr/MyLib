@@ -48,20 +48,20 @@ body {
 	text-align: center;
   	margin: 100px 0;
 }
-.main-content {
+.content {
 	font: 16px/ 21px 'Courier Prime', monospace;
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
 	overflow: hidden;
 }
-.main-content div:nth-child(-n+3) {
+.content .block:nth-child(-n+3) {
 	flex: 0 0 240px;
 }
-.main-content div:nth-child(n+4) {
+.content .block:nth-child(n+4) {
 	flex: 0 0 796px;
 }
-.box {
+.block {
 	height: 240px;
 	background:linear-gradient(-135deg, transparent 35px, #E6E6E6 0) top right;
   	background-size: 100%;
@@ -71,32 +71,32 @@ body {
 	margin: 0 38px 48px 0;
 	overflow: auto;
 }
-.box dl {
+.block dl {
 	padding: 32px;
 }
-.box:nth-child(3n+1) {
+.block:nth-child(3n+1) {
 	background:linear-gradient(-135deg, transparent 35px, #AAA8FA 0) top right;
   	background-size: 100%;
   	background-repeat: no-repeat;
 }
-.box-item_1 dt {
+.one .block-item {
 	padding: 0 0 17px 0;
 }
-.box-item_2 dt:nth-child(even) {
+.two .block-item:nth-child(even) {
 	padding: 0 0 0 20px;
 }
-.box-item_2 dt:nth-child(odd) {
+.two .block-item:nth-child(odd) {
 	padding: 0 0 0 40px;
 }
-.box-item_2 dt:nth-child(1) {
+.two .block-item:nth-child(1) {
 	padding: 0;
 }
-.box-item_3 dt {
+.three .block-item {
 	padding: 0 0 15px 0;
 }
-.box-item_4 dt:nth-child(1) {
+.four .block-item:nth-child(1) {
 	padding: 0 0 20px 0;
 }
-.box-item_5 dt:nth-child(even) {
+.five .block-item:nth-child(even) {
 	padding: 0 0 15px 0;
 }
