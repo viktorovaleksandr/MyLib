@@ -159,13 +159,7 @@ body {
   line-height: 42px;
   margin: 21px auto;
 }
-.headings li:nth-child(4),
-.headings li:nth-child(5) {
-  font-size: 16px;
-  line-height: 21px;
-  margin: 21px auto;
-}
-.headings li:nth-child(6) {
+.headings li:nth-child(n+4) {
 	font-size: 16px;
   	line-height: 21px;
 	margin: 21px 0 0 0;
